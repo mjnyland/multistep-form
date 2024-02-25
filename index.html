@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Multi-step form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="form-modal">
+      <form id="personal-info-form" class="step-content">
+        <div class="heading-container">
+          <h1>Personal Info</h1>
+          <p>Please provide your name, email address, and phone number.</p>
+        </div>
+        <div class="input-container">
+          <label for="name">Name</label>
+          <input type="text" id="name" class="name-input" />
+        </div>
+        <div class="input-container">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" class="email-input" />
+        </div>
+        <div class="input-container">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" class="phone-input" />
+        </div>
+      </form>
+      <form id="select-plan-form" class="step-content">
+        <div class="heading-container">
+          <h1>Select a plan</h1>
+          <p>Please provide your name, email address, and phone number.</p>
+        </div>
+        <div class="input-container">
+          <label for="name">Arcade</label>
+          <label for="name">$9/mo</label>
+          <input type="checkbox" id="Arcade" class="plan-input" />
+          <label for="Advanced">Advanced</label>
+          <label for="Advanced">$12/mo</label>
+          <input type="checkbox" id="Advanced" class="plan-input" />
+          <label for="Pro">Pro</label>
+          <label for="Pro">$15/mo</label>
+          <input type="checkbox" id="Pro" class="plan-input" />
+        </div>
+        <div class="input-container">
+          <label for="cycle">Annual Cycle</label>
+          <input type="checkbox" id="cycle" class="cycle-input" />
+        </div>
+      </form>
+      <form id="add-ons-form" class="step-content">
+        <div class="heading-container">
+          <h1>Pick add-ons</h1>
+          <p>Please provide your name, email address, and phone number.</p>
+        </div>
+        <div class="input-container">
+          <label for="online-service">Online Service</label>
+          <input type="checkbox" id="online-service" class="add-on-input" />
+        </div>
+        <div class="input-container">
+          <label for="email">Larger Storage</label>
+          <input type="checkbox" id="email" class="add-on-input" />
+        </div>
+        <div class="input-container">
+          <label for="custom">Customizable profile</label>
+          <input type="checkbox" id="custom" class="add-on-input" />
+        </div>
+      </form>
+      <div id="finishing-up" class="step-content">
+        <h1>Finishing Up</h1>
+        <div class="selected-plans">
+          <div class="plan-text" id="arcade-display">
+            <h3 id="selected-plan-text">Arcade</h3>
+            <p>$9</p>
+          </div>
+          <div class="plan-text" id="advanced-display">
+            <h3 id="selected-plan-text">Advanced</h3>
+            <p>$12</p>
+          </div>
+          <div class="plan-text" id="pro-display">
+            <h3 id="selected-plan-text">Pro</h3>
+            <p>$15</p>
+          </div>
+        </div>
+        <div class="selected-add-ons">
+          <div class="add-on-text" id="online-service-display">
+            <p>Online Service</p>
+            <p>+$2</p>
+          </div>
+          <div class="add-on-text" id="larger-storage-display">
+            <p>Larger Storage</p>
+            <p>+$2</p>
+          </div>
+          <div class="add-on-text" id="custom-profile-display">
+            <p>Customizable Profile</p>
+            <p>+$2</p>
+          </div>
+        </div>
+      </div>
+      <div id="thank-you" class="step-content">
+        <h1>Thank You!</h1>
+      </div>
+      <div class="buttons-container">
+        <button id="go-back-button">Go Back</button>
+        <button id="next-step-button">Next Step</button>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

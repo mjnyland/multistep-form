@@ -1,0 +1,92 @@
+/* -----------CSS Reset----------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+img,
+video,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* -----------Base Styles----------- */
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(229, 24%, 87%);
+}
+
+#form-modal {
+  background-color: #fff;
+  padding: 32px;
+  border-radius: 16px;
+  justify-content: right;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+
+label {
+  color: black;
+}
+
+.heading-container {
+  padding-bottom: 32px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+#personal-info-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: right;
+}
+
+.step-content {
+  display: none;
+}
+
+.plan-text {
+  display: none;
+}
+
+.add-on-text {
+  display: none;
+}
